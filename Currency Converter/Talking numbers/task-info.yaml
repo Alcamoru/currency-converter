@@ -61,5 +61,8 @@ files:
         TestStage2("cconverter.cconverter").run_tests()
   learner_created: false
 feedback_link: https://hyperskill.org/projects/157/stages/818/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 14 Mar 2021 09:11:21 UTC
 record: -1
