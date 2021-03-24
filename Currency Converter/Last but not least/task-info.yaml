@@ -50,7 +50,10 @@ files:
         def check(self, reply: str, attach) -> CheckResult:
             repl_parsed = [i.strip() for i in reply.split('Checking the cache...') if i]
             if len(repl_parsed) != len(attach):
-                return CheckResult.wrong("Make sure your output is well-formated")
+                return CheckResult.wrong("""
+                Make sure your output is well-formatted and your program didn't stop after the first input.
+                The program should process user input until there is no currency left to process.
+                """)
             for i, curr in enumerate(repl_parsed):
                 curr_split = curr.split('\n')
                 if len(curr_split) != 2:
