@@ -1,8 +1,9 @@
-n_conicoins = float(input())
+import requests
 
-print(f"I will get {n_conicoins * 2.98} RUB from the sale of {n_conicoins} conicoins.")
-print(f"I will get {n_conicoins * 0.82} ARS from the sale of {n_conicoins} conicoins.")
-print(f"I will get {n_conicoins * 0.17} HNL from the sale of {n_conicoins} conicoins.")
-print(f"I will get {n_conicoins * 1.9622} AUD from the sale of {n_conicoins} conicoins.")
-print(f"I will get {n_conicoins * 0.208} MAD from the sale of {n_conicoins} conicoins.")
+currency_code = input()
 
+usd = requests.get(f"http://www.floatrates.com/daily/{currency_code}.json").json()
+eur = requests.get(f"http://www.floatrates.com/daily/{currency_code}.json").json()
+
+print(eur["usd"])
+print(usd["eur"])
