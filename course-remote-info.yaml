@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/479456/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Wed, 24 Mar 2021 16:23:27 UTC
+update_date: Mon, 29 Mar 2021 17:47:55 UTC
 stages:
 - id: 817
   step: 12119
@@ -19,7 +19,7 @@ stages:
   is_completed: true
 - id: 821
   step: 12123
-  is_completed: false
+  is_completed: true
 - id: 822
   step: 12124
   is_completed: false
@@ -45,38 +45,52 @@ topics:
   - title: Variables
     theory_id: 5859
   2:
+  - title: Files
+    theory_id: 6989
   - title: Naming variables
     theory_id: 5885
-  3:
   - title: Program with numbers
     theory_id: 5872
   - title: Invoking a function
     theory_id: 5891
+  - title: Declaring a function
+    theory_id: 5900
   - title: If statement
     theory_id: 5953
   - title: For loop
     theory_id: 6065
-  - title: Load module
-    theory_id: 6019
-  - title: Math functions
-    theory_id: 6256
+  - title: Files in Python
+    theory_id: 8691
+  - title: Reading files
+    theory_id: 8139
   - title: List
     theory_id: 5979
   - title: Boolean logic
     theory_id: 6025
   - title: Comparisons
     theory_id: 5920
-  - title: Dictionary
-    theory_id: 6481
-  4:
-  - title: Files
-    theory_id: 6989
+  3:
   - title: Introduction to operating systems
     theory_id: 9704
   - title: Command line overview
     theory_id: 8977
   - title: Parameters and options
     theory_id: 9746
+  - title: Load module
+    theory_id: 6019
+  - title: Create module
+    theory_id: 6057
+  - title: Packages
+    theory_id: 6384
+  - title: Math functions
+    theory_id: 6256
+  - title: Writing files
+    theory_id: 8334
+  - title: Pip
+    theory_id: 6230
+  - title: Dictionary
+    theory_id: 6481
+  4:
   - title: World Wide Web
     theory_id: 6633
   - title: HyperText Transfer Protocol
@@ -85,25 +99,11 @@ topics:
     theory_id: 6740
   - title: HTTP messages
     theory_id: 6752
-  - title: Declaring a function
-    theory_id: 5900
-  - title: Create module
-    theory_id: 6057
-  - title: Packages
-    theory_id: 6384
   - title: JSON
     theory_id: 6854
-  - title: Files in Python
-    theory_id: 8691
-  - title: Reading files
-    theory_id: 8139
-  - title: Writing files
-    theory_id: 8334
   - title: Context manager
     theory_id: 8702
   - title: Json module
     theory_id: 8999
-  - title: Pip
-    theory_id: 6230
   - title: 'Requests: retrieving data'
     theory_id: 8603
