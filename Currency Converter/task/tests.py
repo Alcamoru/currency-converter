@@ -23,8 +23,6 @@ class TestStage6(StageTest):
                                               ['MKD', 'is not in the cache']])
         ]
 
-
-
         for i, test in enumerate(list_tests):
             zapros = requests.get(f"http://www.floatrates.com/daily/{inputs[i][0]}.json").text
             n = 0
@@ -35,9 +33,8 @@ class TestStage6(StageTest):
 
         return list_tests
 
-
-
     def check(self, reply: str, attach) -> CheckResult:
+        reply = reply.replace('…', '...')
         repl_parsed = [i.strip() for i in reply.split('Checking the cache...') if i]
         if len(repl_parsed) != len(attach):
             return CheckResult.wrong("""
